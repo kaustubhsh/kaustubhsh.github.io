@@ -170,7 +170,7 @@ const bigProjects = {
       link: "https://github.com/kaustubhsh/face-detection-on-server"
     },
     {
-      // image: require("./assets/images/nextuLogo.webp"),
+      image: require("./assets/images/code_buildLogo.png"),
       link: "https://github.com/kaustubhsh/streaming_over_the_server_facedetection"
     }
   ]
