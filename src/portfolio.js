@@ -17,21 +17,22 @@ const socialMediaLinks = {
   gitlab: "https://gitlab.com/kaustubhsh",
   // facebook: "https://www.facebook.com/kaustubh"
   // Instagram and Twitter are also supported in the links!
-  instagram: "https://instagram.com/_kaustubhsh"
+  instagram: "https://instagram.com/_kaustubhsh",
+  twitter: "https://twitter.com/kaustubhsh_"
 };
 
 // Your Skills Section
 
 const skillsSection = {
   title: "What i do",
-  subTitle: "CYBER ENTHUSIASTIC WHO WANTS TO EXPLORE EVERY TECH STACK",
+  // subTitle: "CYBER ENTHUSIASTIC WHO WANTS TO EXPLORE EVERY TECH STACK",
   skills: [
     emoji("⚡ Experience of working with Computer Vision and NLP projects"),
     emoji("⚡ Experience in Cyber Security & Cloud"),
     emoji("⚡ Integration of third party services such as AWS/ Azure"),
     emoji("⚡ Hosting and maintaining websites on virtual machine instances along with integration of databases"),
     emoji("⚡ Deploying deep learning models on cloud to use on mobile devices"),
-    emoji("Setting up streaming jobs from DB to Server or vice-versa on AWS and Azure")
+    emoji("⚡ Setting up streaming jobs from DB to Server or vice-versa on AWS and Azure")
   ],
 
 
@@ -46,14 +47,21 @@ const skillsSection = {
     {
       skillName: "JavaScript",
       fontAwesomeClassname: "fab fa-js",
+      ariahidden:"true",
+
       style: {
         // backgroundColor: "#000000",
-        color: "#F7DF1E"
+        color: "#ffff00"
       }
     },
     {
       skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node-js"
+      fontAwesomeClassname: "fab fa-node",
+      ariahidden:"true",
+
+      style: {
+        color: "#3C873A"
+      }
       // <i class="fab fa-node-js"></i>
     },
     // {
@@ -62,7 +70,10 @@ const skillsSection = {
     // },
     {
       skillName: "postgresql-database",
-      fontAwesomeClassname: "fas fa-database"
+      fontAwesomeClassname: "fas fa-database",
+      style: {
+        color: "#0000ff"
+      }
     },
     {
       skillName: "aws",
@@ -73,15 +84,26 @@ const skillsSection = {
     },
     {
       skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
+      fontAwesomeClassname: "fab fa-python",
+      style: {
+        // "--fa-primary-color": "peru",
+        color: "#306998"
+      }
     },
     {
       skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
+      fontAwesomeClassname: "fab fa-docker",
+      style:{
+        color:"#0db7ed"
+      }
     },
     {
       skillName: "linux",
-      fontAwesomeClassname: "fab fa-linux"
+      fontAwesomeClassname: "fab fa-linux",
+      ariahidden:"true",
+      style:{
+        color:"#000000"
+      }
     }
     // {
     //   skillName: "Azure",
@@ -122,11 +144,13 @@ const workExperiences = {
   viewExperiences: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "",  
-      company: "Crio.Do",
+      role: "Student Intern",  
+      company: "Gurugram Police",
       companylogo: require("./assets/images/gurugramLogo.png"),
       date: "June 2020 – July 2020",
       desc: "Gurugram Police Cyber Security Summer Internship Program 2020 (GPCSSIP2020)",
+      repolink:'#',
+      certificate:'#',
       descBullets: [
         "Developed live project for effective Policing under",
         "Working directly under Mr.Rakshit Tandon (Director Executive Council-Council of Information Security)."
@@ -137,14 +161,22 @@ const workExperiences = {
       company: "Crio.Do",
       companylogo: require("./assets/images/crioLogo.png"),
       date: "Feb 2020 – April 2020",
-      desc: "Worked mainly on three projects for CRIO.DO that can be found @ https://criodo.github.io/Crio-Launch-Feb-2020-kaustubhsharma97/"
+      desc: "CIRO.DO",
+      repolink:'https://criodo.github.io/Crio-Launch-Feb-2020-kaustubhsharma97/',
+      certificate:'https://raw.githubusercontent.com/CrioDo/Crio-Launch-Feb-2020-kaustubhsharma97/gh-pages/static/media/Crio-Launch-Feb-2020-Certificate.png',
+      descBullets:[
+        "QBox is a secure file-sharing service. It is a customized version of the popularly available VSFTPD server.",
+        "QMoney is a visual stock portfolio analyzer. It helps portfolio managers make trade recommendations for their clients."
+      ]
     },
     {
       role: "Project Intern",  
       company: "AdHoc Networks Infotech Private Limited",
       companylogo: require("./assets/images/adhocLogo.jpeg"),
       date: "May 2019 – Feb 2020",
-      desc: ""
+      repolink:'https://github.com/kaustubhsh/streaming_over_the_server_facedetection',
+      certificate:'https://drive.google.com/file/d/1zS3m5hBOOYiMp3Ujt_B6FvoByd703_X5/view?usp=sharing',
+      desc: "Research and development of Computer Vision algorithms, Development of Server side live analysis of Video, worked with team on design, development and integration of real-time video analytic solution."
     },
   ]
 };
@@ -155,7 +187,7 @@ To know how to get github key look at readme.md */
 const openSource = {
   githubConvertedToken: process.env.REACT_APP_GITHUB_TOKEN,
   githubUserName: "kaustubhsh", // Change to your github username to view your profile in Contact Section.
-  showGithubProfile :"true" // Set true or false to show Contact profile using Github, defaults to false 
+  showGithubProfile : "true" // Set true or false to show Contact profile using Github, defaults to false 
 };
 
 
@@ -171,6 +203,10 @@ const bigProjects = {
     },
     {
       image: require("./assets/images/code_buildLogo.png"),
+      link: "https://github.com/kaustubhsh/Attendance-System-using-Group-Photo"
+    },
+    {
+      image: require("./assets/images/adhocLogo.jpeg"),
       link: "https://github.com/kaustubhsh/streaming_over_the_server_facedetection"
     }
   ]

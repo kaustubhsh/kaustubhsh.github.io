@@ -17,7 +17,7 @@ export default function Profile() {
       request: (operation) => {
         operation.setContext({
           headers: {
-            authorization: `Bearer ${openSource.githubConvertedToken}`,
+            authorization: `bearer ${openSource.githubConvertedToken}`,
           },
         });
       },

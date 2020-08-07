@@ -23,6 +23,8 @@ export default function WorkExperience() {
                                         date: card.date,
                                         companylogo: card.companylogo,
                                         role: card.role,
+                                        repolink:card.repolink,
+                                        certificare:card.certificate,
                                         descBullets: card.descBullets
                                     }}
                                 />

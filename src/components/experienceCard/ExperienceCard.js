@@ -36,6 +36,9 @@ export default function ExperienceCard({ cardInfo }) {
         <ul>
           <GetDescBullets descBullets={cardInfo.descBullets} />
         </ul>
+        <a href={cardInfo.repolink} class="button">Repo Link</a>
+        {/* <button class="w3-btn w3-round-xxlarge">and Rounder</button> */}
+        <a href={cardInfo.certificate} class="button">Certificate</a>
       </div>
     </div>
   );
