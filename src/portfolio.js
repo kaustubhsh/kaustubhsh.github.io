@@ -3,9 +3,9 @@
 const greeting = {
 
   username: "Kaustubh Sharma",
-  title: "Hi all, I'm Kaustubh",
-  nickname: "6R1nD3r",
-  subTitle: emoji("A passionate Cyber Security enthusiast 🚀 having an experience of building Web applications with JavaScript / Python / Nodejs / Flask and some other cool libraries and frameworks."),
+  title: "Hi, I'm Kaustubh",
+  // nickname: "6R1nD3r",
+  subTitle: emoji("A passionate Cyber Security enthusiast 🚀 having an experience of building Web applications with JavaScript / Python / Nodejs / Flask and some other cool libraries and frameworks. Currently living in Michigan. USA 🇺🇸"),
   resumeLink: "https://bit.ly/resume_kaustubhsh"
 };
 
