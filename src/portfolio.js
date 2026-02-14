@@ -10,7 +10,7 @@ const socialMediaLinks = {
 
   github: "https://github.com/kaustubhsh",
   linkedin: "https://www.linkedin.com/in/kaustubh-sharma/",
-  gmail: "kaustubhsharma97@gmail.com",
+  gmail: "kaustubh@kaustubhsh.tech",
   gitlab: "https://gitlab.com/kaustubhsh",
   // facebook: "https://www.facebook.com/kaustubh"
   // Instagram and Twitter are also supported in the links!
@@ -285,7 +285,7 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle: "Discuss a project or just want to say hi? My Inbox is open for all.",
   // number: "+1-",
-  email_address: "kaustubhsharma97@gmail.com"
+  email_address: "kaustubh@kaustubhsh.tech"
 };
 
 //Twitter Section
