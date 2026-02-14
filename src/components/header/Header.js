@@ -1,7 +1,8 @@
 import React from "react";
 import Headroom from "react-headroom";
 import "./Header.css";
-import {greeting, workExperiences} from "../../portfolio";
+import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
+import { greeting, workExperiences } from "../../portfolio";
 
 function Header() {
   const exp = workExperiences.viewExperiences;
@@ -21,20 +22,23 @@ function Header() {
           <li>
             <a href="#skills">Skills</a>
           </li>
-          { exp === true &&
+          {exp === true &&
             <li>
               <a href="#experience">Work Experiences</a>
             </li>
           }
+          <li>
+            <a href="#focus-areas">Focus Areas</a>
+          </li>
           <li>
             <a href="#opensource">Open Source</a>
           </li>
           <li>
             <a href="#projects">Projects</a>
           </li>
-          <li>
+          {/* <li>
             <a href="#achievements">Achievements</a>
-          </li>
+          </li> */}
           {/* <li>
             <a href="#blogs">Blogs</a>
           </li> */}
@@ -43,6 +47,9 @@ function Header() {
           </li> */}
           <li>
             <a href="#contact">Contact Me</a>
+          </li>
+          <li>
+            <ToggleSwitch />
           </li>
         </ul>
       </header>

@@ -1,34 +1,66 @@
-@font-face {
-  font-family: 'Agustina Regular';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Agustina Regular'), url('./assets/fonts/Agustina.woff') format('woff');
-  font-display: swap;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --primary-font: 'Inter', sans-serif;
+  --heading-font: 'Outfit', sans-serif;
+  --accent-color: #667eea;
+
+  /* Default / Dark Theme */
+  --bg-gradient: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+  --text-white: #ffffff;
+  --text-secondary: rgba(255, 255, 255, 0.7);
+  --card-bg: rgba(255, 255, 255, 0.05);
+  --card-border: rgba(255, 255, 255, 0.1);
+  --shadow: rgba(0, 0, 0, 0.2);
 }
-@font-face {
-  font-family: 'Montserrat';
-  src: local('Montserrat'), url('./assets/fonts/Montserrat-Regular.ttf') format('woff');
-  font-display: swap;
+
+/* Increase specificity for light theme */
+html[data-theme="light"] {
+  --bg-gradient: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  --text-white: #333333;
+  --text-secondary: #555555;
+  --card-bg: rgba(255, 255, 255, 0.6);
+  --card-border: rgba(255, 255, 255, 0.8);
+  --shadow: rgba(0, 0, 0, 0.1);
 }
+
+body {
+  margin: 0;
+  font-family: var(--primary-font);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--bg-gradient);
+  background-attachment: fixed;
+  /* Ensure gradient covers scroll */
+  color: var(--text-white);
+  line-height: 1.6;
+  min-height: 100vh;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-html,
-body {
+
+html {
   scroll-behavior: smooth;
 }
-body {
-  margin: 0;
-  font: 19px / 23px Montserrat, "Montserrat", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 10px;
 }
-/* Media Query */
-@media (max-width: 1380px) {
-  html,
-  body {
-    font-size: 16px;
-    line-height: normal;
-  }
+
+::-webkit-scrollbar-track {
+  background: #0f0c29;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #302b63;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #667eea;
 }

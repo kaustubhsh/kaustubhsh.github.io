@@ -1,12 +1,9 @@
-﻿import emoji from "react-easy-emoji";
+import emoji from "react-easy-emoji";
 
 const greeting = {
-
   username: "Kaustubh Sharma",
   title: "Hi, I'm Kaustubh",
-  // nickname: "6R1nD3r",
-  subTitle: emoji("A passionate Cyber Security enthusiast 🚀 having an experience of building Web applications with JavaScript / Python / Nodejs / Flask and some other cool libraries and frameworks. Currently living in Michigan. USA 🇺🇸"),
-  resumeLink: "https://bit.ly/resume_kaustubhsh"
+  subTitle: emoji("Platform Engineer & AI Infrastructure Architect 🚀 | LLM Platforms · GPU Optimization · AIOps · MCP Gateway · Agent Systems · Kubernetes")
 };
 
 const socialMediaLinks = {
@@ -18,121 +15,115 @@ const socialMediaLinks = {
   // facebook: "https://www.facebook.com/kaustubh"
   // Instagram and Twitter are also supported in the links!
   instagram: "https://instagram.com/_kaustubhsh",
-  twitter: "https://twitter.com/kaustubhsh_"
+  twitter: "https://x.com/kaustubhsh_"
 };
 
 // Your Skills Section
 
 const skillsSection = {
-  title: "What i do",
-  // subTitle: "CYBER ENTHUSIASTIC WHO WANTS TO EXPLORE EVERY TECH STACK",
+  title: "What I Do",
+  subTitle: "Platform Engineering & AI Infrastructure at Scale",
   skills: [
-    emoji("⚡ Experience of working with Computer Vision and NLP projects"),
-    emoji("⚡ Experience in Cyber Security & Cloud"),
-    emoji("⚡ Integration of third party services such as AWS/ Azure"),
-    emoji("⚡ Hosting and maintaining websites on virtual machine instances along with integration of databases"),
-    emoji("⚡ Deploying deep learning models on cloud to use on mobile devices"),
-    emoji("⚡ Setting up streaming jobs from DB to Server or vice-versa on AWS and Azure")
+    emoji("⚡ Platform Engineering for LLM — Kubernetes-native inference & training platforms"),
+    emoji("⚡ GPU Infrastructure — NVIDIA MIG strategy, datacenter GPU orchestration & optimization"),
+    emoji("⚡ AIOps & LLM Training Platforms — end-to-end ML lifecycle management"),
+    emoji("⚡ C++ High Performance Computing — Multi-threading, Async IO, Modern C++ Standards (C++17/20)"),
+    emoji("⚡ MCP Gateway & Agent Registry — LLM tool routing and agent discovery"),
+    emoji("⚡ AI Agent HUB — centralized multi-agent orchestration & governance"),
+    emoji("⚡ SDLC Automation & CI/CD — GitOps, ArgoCD, Kubernetes pipeline engineering")
   ],
 
-
   softwareSkills: [
-    // {
-    //   skillName: "sass",
-    //   fontAwesomeClassname: "fab fa-sass",
-    //   style: {
-    //     color: "#CC6699"
-    //   }
-    // },
     {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js",
-      ariahidden:"true",
-
+      skillName: "C++",
+      fontAwesomeClassname: "fab fa-cuttlefish",
       style: {
-        // backgroundColor: "#000000",
-        color: "#ffff00"
+        color: "#00599C"
       }
     },
     {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node",
-      ariahidden:"true",
-
+      skillName: "Kubernetes",
+      fontAwesomeClassname: "fa-brands fa-kubernetes",
       style: {
-        color: "#3C873A"
-      }
-      // <i class="fab fa-node-js"></i>
-    },
-    // {
-    //   skillName: "npm",
-    //   fontAwesomeClassname: "fab fa-npm"
-    // },
-    {
-      skillName: "postgresql-database",
-      fontAwesomeClassname: "fas fa-database",
-      style: {
-        color: "#0000ff"
+        color: "#326CE5"
       }
     },
     {
-      skillName: "aws",
+      skillName: "Docker",
+      fontAwesomeClassname: "fab fa-docker",
+      style: {
+        color: "#2496ED"
+      }
+    },
+    {
+      skillName: "Python",
+      fontAwesomeClassname: "fab fa-python",
+      style: {
+        color: "#3776AB"
+      }
+    },
+    {
+      skillName: "AWS",
       fontAwesomeClassname: "fab fa-aws",
       style: {
         color: "#FF9900"
       }
     },
     {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python",
-      style: {
-        // "--fa-primary-color": "peru",
-        color: "#306998"
-      }
-    },
-    {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker",
-      style:{
-        color:"#0db7ed"
-      }
-    },
-    {
-      skillName: "linux",
+      skillName: "Linux",
       fontAwesomeClassname: "fab fa-linux",
-      ariahidden:"true",
-      style:{
-        color:"#000000"
+      style: {
+        color: "#FCC624"
+      }
+    },
+    {
+      skillName: "Git",
+      fontAwesomeClassname: "fab fa-git",
+      style: {
+        color: "#F05032"
+      }
+    },
+    {
+      skillName: "GitHub Actions",
+      fontAwesomeClassname: "fab fa-github",
+      style: {
+        color: "#181717"
+      }
+    },
+    {
+      skillName: "Node.js",
+      fontAwesomeClassname: "fab fa-node",
+      style: {
+        color: "#339933"
       }
     }
-    // {
-    //   skillName: "Azure",
-    //   fontAwesomeClassname: "simple-icons:microsoftazure",
-    //   style: {
-    //     color: "#0089D6"
-    //   }
-  // }
-    
   ]
-  
 };
 
 // Your top 3 proficient stacks/tech experience
 
 const techStack = {
-  viewSkillBars: false, //Set it to true to show Proficiency Section
+  viewSkillBars: true,
   experience: [
     {
-      Stack: "Backend",  //Insert stack or technology you have experience in
-      progressPercentage: "80%"  //Insert relative proficiency in percentage
+      Stack: "Kubernetes & Platform Engineering",
+      progressPercentage: "95%"
     },
     {
-      Stack: "Cyber Security",
-      progressPercentage: "50%"
+      Stack: "GPU Infrastructure & NVIDIA Optimization",
+      progressPercentage: "90%"
     },
     {
-      Stack: "Programming",
-      progressPercentage: "50%"
+      Stack: "Modern C++ & High Performance Computing",
+      progressPercentage: "90%"
+    },
+    {
+      Stack: "CI/CD & GitOps Automation",
+      progressPercentage: "90%"
+    },
+    {
+      Stack: "LLM Platforms & AIOps",
+      progressPercentage: "85%"
     }
   ]
 };
@@ -141,43 +132,35 @@ const techStack = {
 // Your top 3 work experiences
 
 const workExperiences = {
-  viewExperiences: true, //Set it to true to show workExperiences Section
+  viewExperiences: false,
   experience: [
     {
-      role: "Student Intern",  
-      company: "Gurugram Police",
-      companylogo: require("./assets/images/gurugramLogo.png"),
-      date: "June 2020 – July 2020",
-      desc: "Gurugram Police Cyber Security Summer Internship Program 2020 (GPCSSIP2020)",
-      repolink:'#',
-      certificate:'#',
+      role: "Senior Platform Engineer — AI Infrastructure",
+      company: "AI Infrastructure Solutions",
+      companylogo: require("./assets/images/ai-logo.png"),
+      date: "2023 - Present",
+      desc: "Architecting and operating Kubernetes-based platforms for LLM training, inference, and agent orchestration at scale",
       descBullets: [
-        "Developed live project for effective Policing under",
-        "Working directly under Mr.Rakshit Tandon (Director Executive Council-Council of Information Security)."
+        "Designed LLM serving platform on Kubernetes with vLLM, Triton, and Ray for multi-model inference",
+        "Implemented NVIDIA MIG strategy for GPU partitioning across datacenter GPU clusters",
+        "Built MCP Gateway for LLM tool routing and Agent Registry for multi-agent discovery",
+        "Created AIOps platform with real-time observability, anomaly detection, and auto-remediation",
+        "Engineered CI/CD pipelines with ArgoCD, Helm, and GitOps for zero-downtime deployments"
       ]
     },
     {
-      role: "Student Developer",   
-      company: "Crio.Do",
-      companylogo: require("./assets/images/crioLogo.png"),
-      date: "Feb 2020 – April 2020",
-      desc: "CIRO.DO",
-      repolink:'https://criodo.github.io/Crio-Launch-Feb-2020-kaustubhsharma97/',
-      certificate:'https://raw.githubusercontent.com/CrioDo/Crio-Launch-Feb-2020-kaustubhsharma97/gh-pages/static/media/Crio-Launch-Feb-2020-Certificate.png',
-      descBullets:[
-        "QBox is a secure file-sharing service. It is a customized version of the popularly available VSFTPD server.",
-        "QMoney is a visual stock portfolio analyzer. It helps portfolio managers make trade recommendations for their clients."
+      role: "Cloud & DevOps Engineer — AI Platforms",
+      company: "Cloud AI Solutions",
+      companylogo: require("./assets/images/cloud-logo.png"),
+      date: "2022 - 2023",
+      desc: "Built cloud-native AI infrastructure and SDLC automation frameworks",
+      descBullets: [
+        "Architected Kubernetes cluster fleet for ML workloads across AWS and Azure",
+        "Built GPU scheduling and resource optimization layer for training jobs",
+        "Implemented end-to-end SDLC automation with GitHub Actions, SonarQube, and Terraform",
+        "Deployed AI Agent HUB for centralized agent lifecycle management and governance"
       ]
-    },
-    {
-      role: "Project Intern",  
-      company: "AdHoc Networks Infotech Private Limited",
-      companylogo: require("./assets/images/adhocLogo.jpeg"),
-      date: "May 2019 – Feb 2020",
-      repolink:'https://github.com/kaustubhsh/streaming_over_the_server_facedetection',
-      certificate:'https://drive.google.com/file/d/1zS3m5hBOOYiMp3Ujt_B6FvoByd703_X5/view?usp=sharing',
-      desc: "Research and development of Computer Vision algorithms, Development of Server side live analysis of Video, worked with team on design, development and integration of real-time video analytic solution."
-    },
+    }
   ]
 };
 
@@ -187,7 +170,7 @@ To know how to get github key look at readme.md */
 const openSource = {
   githubConvertedToken: process.env.REACT_APP_GITHUB_TOKEN,
   githubUserName: "kaustubhsh", // Change to your github username to view your profile in Contact Section.
-  showGithubProfile : "true" // Set true or false to show Contact profile using Github, defaults to false 
+  showGithubProfile: "true" // Set true or false to show Contact profile using Github, defaults to false 
 };
 
 
@@ -220,32 +203,32 @@ const achievementSection = {
   subtitle: "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
 
   achivementsCards: [
-  //   {
-  //     // title: "Google Code-In Finalist",
-  //     // subtitle: "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-  //     // image: require("./assets/images/codeInLogo.webp"),
-  //     // footerLink: [
-  //       // { name: "Certification", url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing" },
-  //       // { name: "Award Letter", url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing" },
-  //       // { name: "Google Code-in Blog", url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html" }
-  //     // ]
-  //   },
-  //   {
-  //     // title: "Google Assistant Action",
-  //     // subtitle: "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-  //     // image: require("./assets/images/googleAssistantLogo.webp"),
-  //     // footerLink: [{ name: "View Google Assistant Action", url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en" }]
-  //   },
+    //   {
+    //     // title: "Google Code-In Finalist",
+    //     // subtitle: "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
+    //     // image: require("./assets/images/codeInLogo.webp"),
+    //     // footerLink: [
+    //       // { name: "Certification", url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing" },
+    //       // { name: "Award Letter", url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing" },
+    //       // { name: "Google Code-in Blog", url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html" }
+    //     // ]
+    //   },
+    //   {
+    //     // title: "Google Assistant Action",
+    //     // subtitle: "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
+    //     // image: require("./assets/images/googleAssistantLogo.webp"),
+    //     // footerLink: [{ name: "View Google Assistant Action", url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en" }]
+    //   },
 
-  //   {
-  //     // title: "PWA Web App Developer",
-  //     // subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-  //     // image: require("./assets/images/pwaLogo.webp"),
-  //     // footerLink: [
-  //     //   { name: "Certification", url: "" },
-  //     //   { name: "Final Project", url: "https://pakistan-olx-1.firebaseapp.com/" }
-  //     // ]
-  //   }
+    //   {
+    //     // title: "PWA Web App Developer",
+    //     // subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
+    //     // image: require("./assets/images/pwaLogo.webp"),
+    //     // footerLink: [
+    //     //   { name: "Certification", url: "" },
+    //     //   { name: "Final Project", url: "https://pakistan-olx-1.firebaseapp.com/" }
+    //     // ]
+    //   }
   ]
 };
 
@@ -290,7 +273,7 @@ const talkSection = {
 
 const podcastSection = {
   title: emoji("Podcast 🎙️"),
-  subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
+  subtitle: "I LOVE TO TALK ABOUT TECH, LISTEN TO PODCAST 🎙️",
 
   // Please Provide with Your Podcast embeded Link
   podcast: [
@@ -301,7 +284,7 @@ const podcastSection = {
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle: "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+1-",
+  // number: "+1-",
   email_address: "kaustubhsharma97@gmail.com"
 };
 
@@ -309,7 +292,7 @@ const contactInfo = {
 
 const twitterDetails = {
 
-  userName : "kaustubhsh_"//Replace "twitter" with your twitter username without @
-  
+  userName: "kaustubhsh_"//Replace "twitter" with your twitter username without @
+
 };
-export { greeting, socialMediaLinks, skillsSection, techStack, workExperiences, openSource, bigProjects, achievementSection, blogSection, talkSection, podcastSection, contactInfo , twitterDetails};
+export { greeting, socialMediaLinks, skillsSection, techStack, workExperiences, openSource, bigProjects, achievementSection, blogSection, talkSection, podcastSection, contactInfo, twitterDetails };

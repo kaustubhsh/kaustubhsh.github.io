@@ -1,44 +1,110 @@
+.startup-projects-main-container {
+  width: 90%;
+  max-width: 1300px;
+  padding: 40px 20px;
+  margin: 0 auto;
+}
+
 .startup-projects-main {
   display: flex;
-}
-
-.startup-projects-main > * {
-  flex: 1;
-  margin-bottom: 30px;
-}
-
-.starup-project-image > img {
-  max-width: 100%;
-  height: auto;
-}
-
-.project-card-head {
-  color: rgb(36, 41, 46);
-  font-size: 25px;
-  font-weight: 700;
-  letter-spacing: -0.5px;
-  margin: 0px;
+  justify-content: center;
+  margin-top: 50px;
+  width: 100%;
 }
 
 .startup-project-text {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
 }
 
-.project-card-description {
-  color: rgb(88, 96, 105);
+/* Replicate titles here to ensure availability if Project.css isn't loaded */
+.skills-heading {
+  font-family: var(--heading-font);
+  font-size: 56px;
+  font-weight: 700;
+  color: var(--text-white);
+  margin-bottom: 20px;
 }
-.saaya-health-div,
-.nextu-div {
+
+.project-subtitle {
+  font-family: var(--primary-font);
+  color: var(--text-secondary);
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.saaya-health-div {
+  background: var(--card-bg);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--card-border);
+  padding: 20px;
+  border-radius: 12px;
   cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
 }
+
+.saaya-health-div:hover {
+  transform: translateY(-5px);
+  background: var(--card-bg);
+  box-shadow: 0 10px 30px -10px var(--shadow);
+}
+
+.saaya-health-div img {
+  max-width: 200px;
+  /* Limit logo size */
+  max-height: 80px;
+  width: auto;
+  height: auto;
+  /* filter: brightness(0) invert(1); */
+  /* Optional: make logos white if they are dark */
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.saaya-health-div:hover img {
+  transform: scale(1.1);
+}
+
+/* Light Mode: Invert logos (assuming they are white for dark mode) */
+html[data-theme="light"] .saaya-health-div img {
+  filter: invert(1);
+}
+
 
 @media (max-width: 768px) {
+  .startup-projects-main-container {
+    padding-top: 0;
+  }
+
+  .startup-projects-main {
+    flex-direction: column;
+    margin-top: 30px;
+  }
+
   .starup-project-image {
     display: none;
   }
-  .project-subtitle{
+
+  .skills-heading {
+    text-align: center;
+    font-size: 36px;
+  }
+
+  .project-subtitle {
     font-size: 16px;
     text-align: center;
+  }
+
+  .startup-project-text {
+    align-items: center;
   }
 }

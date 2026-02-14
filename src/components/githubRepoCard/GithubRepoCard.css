@@ -1,72 +1,93 @@
 .repo-card-div {
-  color: rgb(88, 96, 105);
-  background-color: rgb(255, 255, 255);
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 30px -15px;
+  background: rgba(255, 255, 255, 0.05);
+  /* Glass card */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 2rem;
+  border-radius: 15px;
   cursor: pointer;
-}
-.repo-card-div:hover {
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px -10px;
-}
-
-.repo-stats {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  height: 100%;
   display: flex;
-  -webkit-box-pack: justify;
+  flex-direction: column;
   justify-content: space-between;
-  font-size: 13px;
-  color: rgb(106, 115, 125);
 }
 
-.repo-left-stat {
-  -webkit-box-flex: 1;
-  flex-grow: 1;
-  display: flex;
-}
-
-.language-color {
-  width: 10px;
-  height: 10px;
-  background-color: blue;
-  margin-right: 0.25rem;
-  border-radius: 100%;
-}
-
-.repo-left-stat span {
-  display: flex;
-  -webkit-box-align: center;
-  align-items: center;
-  margin-right: 0.75rem;
+.repo-card-div:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+  border-color: rgba(255, 255, 255, 0.2);
 }
 
 .repo-name-div {
   display: flex;
   align-items: center;
+  margin-bottom: 1rem;
 }
 
 .repo-svg {
-  margin-right: 0.5rem;
-  min-width: 16px;
+  margin-right: 0.8rem;
+  width: 20px;
+  height: 20px;
+  color: var(--accent-color);
 }
 
 .repo-name {
+  color: #fff;
+  font-family: var(--heading-font);
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 0;
   white-space: nowrap;
-  text-overflow: ellipsis;
-  color: rgb(36, 41, 46);
-  margin-bottom: 0.75rem;
-  font-size: 25px;
-  font-weight: 700;
-  letter-spacing: -0.5px;
   overflow: hidden;
-  margin: 0px;
-}
-
-.repo-star-svg {
-  margin-right: 0.3rem;
+  text-overflow: ellipsis;
 }
 
 .repo-description {
-  overflow: hidden;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
   -webkit-box-orient: vertical;
+  overflow: hidden;
+  flex-grow: 1;
+}
+
+.repo-stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: auto;
+}
+
+.repo-left-stat {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.repo-left-stat span {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.language-color {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.repo-right-stat {
+  display: flex;
+  align-items: center;
+  font-size: 0.85rem;
 }
